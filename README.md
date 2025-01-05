@@ -111,7 +111,7 @@ open 0-index.html
 ---
 
 ## 👨‍💻 Auteurs
-- [Erwan Lebreton](https://github.com/Erwan2072) étudiant Holberton en Spécialisation Fullstack
+- [Khezami Taha](https://github.com/KhezamiTaha) étudiant Holberton en Spécialisation Fullstack
 ---
 
 
