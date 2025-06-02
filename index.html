@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones - Holberton</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/headphones.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <input type="checkbox" id="checkbox" class="toggle-nav hidden">
+        <label for="checkbox" class="toggle-icon"><span></span></label>
+        <div class="spacer"></div>
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo_headphones.png" alt="Logo">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">what we do</a></li>
+            <li><a href="#">our results</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">
+        <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <div class="main-btn">
+          <button>Call To Action</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.</p>
+      </div>
+    </div>
+  </header>
+  <div class="work ">
+    <div class="container">
+      <h2>What we do…</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.</p>
+      <div class="row">
+        <div class="box">
+          <div class="holberton_school-icon-ic_sound"></div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box">
+          <div class="holberton_school-icon-ic_video"></div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box">
+          <div class="holberton_school-icon-ic_music"></div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box">
+          <div class="holberton_school-icon-ic_hearing"></div>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end work section  -->
+  <!-- start result -->
+  <div class="result  mt-110">
+    <div class="container">
+      <h2>Our results speak for themselves</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.</p>
+      <div class="row">
+        <div class="box">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="box">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="box">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="box">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end results  -->
+  <!-- start contact  -->
+  <div class="contact  mt-110">
+    <div class="container">
+      <h2>Contact us</h2>
+      <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Your message">
+        <div class="main-btn">
+          <button>Call To Action</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <footer class="mt-110">
+    <div class="container">
+      <div class="content">
+        <div class="footer-logo">
+          <img src="images/logo_headphones.png" alt="logo">
+        </div>
+        <div class="social">
+          <div class="holberton_school-icon-ic_facebook"></div>
+          <div class="holberton_school-icon-ic_instagram"></div>
+          <div class="holberton_school-icon-ic_twitter"></div>
+        </div>
+      </div>
+
+      <div class="copyright"><span>&copy;</span>headphones <span>2025</span></div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script>
+
+
+    // Target the <head> element where stylesheets are located
+    const headElement = document.head;
+
+    // Create a MutationObserver to monitor changes
+    const observer = new MutationObserver((mutationsList) => {
+      for (const mutation of mutationsList) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.target.tagName === "LINK" &&
+          mutation.target.rel === "stylesheet"
+        ) {
+          console.log("CSS file updated:", mutation.target.href);
+
+          // Delay the scrolling to ensure the DOM updates are reflected
+          setTimeout(() => {
+            console.log("Scrolling to bottom...");
+            window.scrollTo({ top: document.body.scrollHeight }); // Removed smooth behavior
+          }, 100); // Adjust delay if needed
+          break;
+        }
+      }
+    });
+
+    // Observe attribute changes in the <head> element and its child nodes
+    observer.observe(headElement, {
+      attributes: true,
+      subtree: true,
+      attributeFilter: ["href"], // Monitor changes to the 'href' attribute
+    });
+
+    // Scroll to the bottom on initial load
+    window.onload = () => {
+      console.log("Initial load: Scrolling to bottom...");
+      setTimeout(() => {
+        window.scrollTo({ top: document.body.scrollHeight }); // Removed smooth behavior
+      }, 100);
+    };
+
+
+  </script> -->
+</body>
+
+</html>

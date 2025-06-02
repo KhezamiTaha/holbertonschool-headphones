@@ -1,0 +1,705 @@
+:root {
+  --red: #FF6565;
+  --dark: #071629;
+}
+
+
+/* General setting  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mt-110 {
+  margin-top: 110px;
+}
+
+.scroll {
+  margin-bottom: 110px;
+}
+
+@media(min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 0 0px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+
+.main-btn button {
+  background-color: #FF6565;
+  border-radius: 2rem;
+  padding: 13px 31px;
+  text-decoration: none;
+  color: white;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+a:hover,
+a:active {
+  color: var(--red);
+
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+
+.hidden {
+  /* display: none; */
+}
+
+/* header section  */
+
+header {
+  height: 120vh;
+  background-image: url("../images/headphones_hero_1.jpg");
+  background-position: center 0%;
+  background-size: cover;
+
+}
+
+@media(max-width: 480px) {
+  header {
+    background-position: 33% center;
+  }
+}
+
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+@media(max-width: 480px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+
+
+header label {
+  width: 20px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header label span {
+  display: inline-block;
+  height: 2px;
+  width: 50%;
+  background-color: white;
+
+}
+
+header label span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  transition: all .2s ease-out;
+
+}
+
+header label span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  transition: all .2s ease-out;
+
+}
+
+
+header input {
+  display: none;
+}
+
+@media(min-width: 481px) {
+
+  header label,
+  header .spacer {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+header .logo {
+  height: 2rem;
+  width: 12.12rem;
+  display: flex;
+  align-items: center;
+}
+
+@media(min-width: 481px) and (max-width: 767px) {
+  header .logo {
+    max-width: 10rem;
+  }
+}
+
+header img {
+  width: 100%;
+}
+
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* media 480 and icon toggle =============== */
+
+@media(max-width: 480px) {
+  header .header-container {
+    justify-content: unset;
+  }
+
+  header .header-container nav {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+
+
+  header .spacer {
+    flex: 0 0 20%;
+  }
+
+  header .hero {
+    margin-top: 133px;
+  }
+
+
+  header .header-container {
+    flex-wrap: wrap;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s eas-out;
+  }
+
+  header input:checked~nav {
+    display: block;
+  }
+
+  header input:checked~nav ul {
+    max-height: 100%;
+  }
+
+  header input:checked~label span {
+    width: 0;
+  }
+
+  header input:checked~label span::before,
+  header input:checked~label span::after {
+    top: 50%;
+  }
+
+  header input:checked~label span::before {
+    transform: rotate(-45deg);
+  }
+
+  header input:checked~label span::after {
+    transform: rotate(45deg);
+  }
+
+
+
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+}
+
+@media(min-width: 481px) and (max-width: 767px) {
+  header nav ul li a {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* here ================== */
+
+@media(max-width: 480px) {
+  header nav ul li a {
+    display: block;
+    padding: 20px;
+  }
+}
+
+
+/* hero section ============= */
+
+
+.hero {
+  color: white;
+  text-align: center;
+  margin-top: 17rem;
+
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+
+}
+
+.hero p:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.hero p:last-child {
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 637px;
+  margin: 7rem auto;
+  line-height: 26px;
+}
+
+
+/* start work  ==========================*/
+.work {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.work h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.work .container>p {
+  max-width: 637px;
+  margin: 40px auto 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark);
+}
+
+.work .row {
+  margin-top: 97px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media(min-width: 481px) and (max-width: 767px) {
+  .work .row {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 96px;
+  }
+}
+
+@media(max-width: 480px) {
+  .work .row {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 96px;
+  }
+  .row .box{
+    width: 207px;
+    margin: 0 auto;
+  }
+}
+
+/* here ================== */
+
+.work .row .box>div {
+  color: var(--red);
+  margin-bottom: 1.25rem;
+}
+
+.work .row .box h3 {
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+
+}
+
+
+.work .row .box p {
+  line-height: 26px;
+  font-size: 16px;
+}
+
+
+/* end work  */
+/* start results  */
+
+.result {
+  background-image: url("../images/headphones_hero_2.jpg");
+  height: 100vh;
+  color: white;
+  text-align: center;
+  background-size: cover;
+}
+
+.result h2 {
+  padding-top: 140px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.result .container>p {
+  max-width: 637px;
+  margin: 40px auto 56px;
+  line-height: 26px;
+}
+
+
+.result .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
+
+  /* width: fit-content;
+  margin: 0 auto; */
+}
+
+
+@media(min-width: 481px) and (max-width: 767px) {
+  .result {
+    height: unset;
+    padding-bottom: 50px;
+  }
+
+  .result .row {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+  }
+}
+
+@media(max-width: 480px){
+  .result {
+    height: unset;
+    padding-bottom: 50px;
+  }
+  .result .row{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 60px;
+  }
+}
+
+.result .row .box {
+  background-image: url("../images/pentagone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 190px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
+.result .row .box h3 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 46px;
+  top: 55px;
+}
+
+.result .row .box p {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  bottom: 50px;
+}
+
+/* end results  */
+/* start contact  */
+
+.contact {
+  text-align: center;
+
+
+}
+
+.contact h2 {
+  margin-bottom: 56px;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--dark);
+
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+.contact form input {
+  outline: none;
+  border: none;
+  margin-bottom: 45px;
+  border-bottom: 1px solid rgba(7, 22, 41, 17%);
+  padding: 10px 0;
+}
+
+
+.contact form ::placeholder {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* end contact  */
+
+/* footer  */
+
+footer {
+  background-color: var(--dark);
+  text-align: center;
+  height: 250px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 90px;
+}
+
+@media(max-width: 480px){
+  footer .content {
+    padding-top: 48px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  footer .footer-logo{
+    margin-bottom: 45px;
+  }
+  footer .container .copyright {
+  margin-top: 45px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+}
+
+footer .content .footer-logo {
+  width: 160px;
+  height: 32px;
+}
+
+footer .content .footer-logo img {
+  max-width: 100%;
+}
+
+
+footer .content .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+footer .content .social div {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+}
+
+footer .content .social div::before {
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+}
+
+footer .copyright {
+  margin-top: 70px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+footer .copyright span {
+  color: var(--red);
+  opacity: unset;
+}
+
+
+
+
+
+
+
+
+
+
+/* icons
+		============================= */
+
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('../holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4');
+  src: url('../holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('../holberton_school-icon/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('../holberton_school-icon/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('../holberton_school-icon/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: var(--text-hover);
+  font-size: 90px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-arrow_1:before {
+  content: "\e900";
+}
+
+.holberton_school-icon-arrow_2:before {
+  content: "\e901";
+}
+
+.holberton_school-icon-arrow_3:before {
+  content: "\e902";
+}
+
+.holberton_school-icon-arrow_4:before {
+  content: "\e903";
+}
+
+.holberton_school-icon-arrow_5:before {
+  content: "\e904";
+}
+
+.holberton_school-icon-check:before {
+  content: "\e905";
+}
+
+.holberton_school-icon-ic_bag:before {
+  content: "\e906";
+}
+
+.holberton_school-icon-ic_cart:before {
+  content: "\e907";
+}
+
+.holberton_school-icon-ic_facebook:before {
+  content: "\e908";
+}
+
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+
+.holberton_school-icon-ic_instagram:before {
+  content: "\e90a";
+}
+
+.holberton_school-icon-ic_laptop:before {
+  content: "\e90b";
+}
+
+.holberton_school-icon-ic_money:before {
+  content: "\e90c";
+}
+
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+
+.holberton_school-icon-ic_twitter:before {
+  content: "\e90f";
+}
+
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+
+.holberton_school-icon-menu:before {
+  content: "\e911";
+}
+
+.holberton_school-icon-search_1:before {
+  content: "\e912";
+}
+
+.holberton_school-icon-search_2:before {
+  content: "\e913";
+}
+
+.holberton_school-icon-star:before {
+  content: "\e914";
+}
