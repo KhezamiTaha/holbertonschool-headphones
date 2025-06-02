@@ -82,7 +82,7 @@ This project was part of Holberton's “Implement a design from scratch” modul
 
 ## 📸 Screenshots
 
-### 🖥️ Responsive layout  
+### 🖥️ Responsive layout using Grid
 ![desktop](./images/layout.jpg)
 
 
