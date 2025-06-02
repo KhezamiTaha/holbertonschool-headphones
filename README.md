@@ -2,7 +2,10 @@
 
 # 🎧 Holberton Headphones – Fully Responsive Landing Page
 
-A clean and responsive landing page built entirely from scratch using **HTML** and **CSS**, based on a Figma design provided by Holberton School. This project showcases my ability to translate a professional UI design into accessible, pixel-perfect code — without relying on frameworks like Bootstrap or JavaScript.
+A clean and responsive landing page built entirely from scratch using **HTML** and **CSS**, based on a Figma design provided by Holberton School.  
+📱[Live demo](https://khezamitaha.github.io/holbertonschool-headphones/).
+
+ This project showcases my ability to translate a professional UI design into accessible, pixel-perfect code — without relying on frameworks like Bootstrap or JavaScript.
 
 ![Landing Page](images/landing.png)
 
