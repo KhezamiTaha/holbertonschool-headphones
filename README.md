@@ -82,14 +82,10 @@ This project was part of Holberton's “Implement a design from scratch” modul
 
 ## 📸 Screenshots
 
-### 🖥️ Desktop View  
-![desktop](./images/01_headphones_desktop.png)
+### 🖥️ Responsive layout  
+![desktop](./images/layout.jpg)
 
-### 📱 Tablet View  
-![tablet](./images/01_headphones_tablet.png)
 
-### 📳 Mobile View  
-![mobile](./images/01_headphones_mobile.png)
 ---
 
 ## 📬 Contact
